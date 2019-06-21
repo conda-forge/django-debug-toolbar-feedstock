@@ -3,11 +3,11 @@ About django-debug-toolbar
 
 Home: https://github.com/django-debug-toolbar/django-debug-toolbar
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: A configurable set of panels that display various debug information about the current request/response.
+Summary: A configurable set of panels that display various debug information about the current request/response
 
 
 
