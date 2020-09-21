@@ -1,4 +1,4 @@
-{% set version = "2.2" %}
+{% set version = "3.0" %}
 
 package:
   name: django-debug-toolbar
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/django-debug-toolbar/django-debug-toolbar-{{ version }}.tar.gz
-  sha256: eabbefe89881bbe4ca7c980ff102e3c35c8e8ad6eb725041f538988f2f39a943
+  sha256: 23129b4f771605c7ccf8733cc53558a68c5d463d60cdc83408d34b713acf4f5f
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -32,7 +32,7 @@ about:
   home: https://github.com/django-debug-toolbar/django-debug-toolbar
   license: BSD-3-Clause
   license_file: LICENSE
-  summary: 'A configurable set of panels that display various debug information about the current request/response'
+  summary: A configurable set of panels that display various debug information about the current request/response
 
 extra:
   recipe-maintainers:
