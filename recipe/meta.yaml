@@ -1,4 +1,4 @@
-{% set version = "3.1.1" %}
+{% set version = "3.2" %}
 
 package:
   name: django-debug-toolbar
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/django-debug-toolbar/django-debug-toolbar-{{ version }}.tar.gz
-  sha256: c97921a9cd421d392e7860dc4b464db8e06c8628df4dc58fedab012888c293c6
+  sha256: 84e2607d900dbd571df0a2acf380b47c088efb787dce9805aefeb407341961d2
 
 build:
   number: 0
@@ -14,7 +14,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python >=3.5
     - pip
   run:
