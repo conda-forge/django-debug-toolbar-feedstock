@@ -1,32 +1,37 @@
+{% set name = "django-debug-toolbar" %}
 {% set version = "3.2.3" %}
 
+
 package:
-  name: django-debug-toolbar
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/d/django-debug-toolbar/django-debug-toolbar-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-debug-toolbar-{{ version }}.tar.gz
   sha256: 95880677ea846ba1077d02305fd5e2b25e1da096e1d4a735b665e3340fa2ae79
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
   run:
-    - python >=3.5
-    - django >=1.11
+    - python >=3.6
+    - django >=2.2
     - sqlparse >=0.2.0
 
 test:
   imports:
     - debug_toolbar
     - debug_toolbar.management
-    - debug_toolbar.management.commands
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/django-debug-toolbar/django-debug-toolbar
