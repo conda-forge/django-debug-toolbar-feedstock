@@ -1,5 +1,5 @@
 {% set name = "django-debug-toolbar" %}
-{% set version = "4.3.0" %}
+{% set version = "4.4.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 0b0dddee5ea29b9cb678593bc0d7a6d76b21d7799cb68e091a2148341a80f3c4
+  sha256: 7a62d8696bdba0f0d6eda701e8a5e433f742b8a09ce1fd0b8f8d82af3b7adeb6
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - django >=3.2.4
+    - django >=4.2.9
     - sqlparse >=0.2
 
 test:
