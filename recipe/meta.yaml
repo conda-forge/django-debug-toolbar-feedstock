@@ -1,5 +1,5 @@
 {% set name = "django-debug-toolbar" %}
-{% set version = "4.4.1" %}
+{% set version = "4.4.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 7a62d8696bdba0f0d6eda701e8a5e433f742b8a09ce1fd0b8f8d82af3b7adeb6
+  sha256: 9204050fcb1e4f74216c5b024bc76081451926a6303993d6c513f5e142675927
 
 build:
   number: 0
