@@ -3,11 +3,15 @@ About django-debug-toolbar-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-debug-toolbar-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/django-debug-toolbar/django-debug-toolbar
+Home: https://github.com/django-commons/django-debug-toolbar
 
 Package license: BSD-3-Clause
 
-Summary: A configurable set of panels that display various debug information about the current request/response
+Summary: A configurable set of panels that display various debug information about the current request/response.
+
+Development: https://github.com/django-commons/django-debug-toolbar
+
+Documentation: https://django-debug-toolbar.readthedocs.io/
 
 Current build status
 ====================
@@ -188,6 +192,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@kwilcox](https://github.com/kwilcox/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
